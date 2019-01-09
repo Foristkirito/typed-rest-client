@@ -11,7 +11,7 @@ import * as path from 'path';
  * @return {string} - resultant url 
  */
 export function getUrl(resource: string, baseUrl?: string): string  {
-    const pathApi = path.posix || path;
+    const pathApi = path;
     if (!baseUrl) {
         return resource;
     }
